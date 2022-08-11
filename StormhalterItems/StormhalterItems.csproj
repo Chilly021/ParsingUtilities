@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Items\Gauntlets\MakonGauntlets.cs" />
+    <Compile Remove="Items\Gauntlets\MenukiGauntlets.cs" />
+    <Compile Remove="Items\Weapons\Swords\SilverMoonStoneSword.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.3.0" />
+    <PackageReference Include="coverlet.collector" Version="3.1.2" />
+    <PackageReference Include="Spire.XLS" Version="12.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Items\Gauntlets\MakonGauntlets.cs" />
+    <None Include="Items\Gauntlets\MenukiGauntlets.cs" />
+    <None Include="Items\Weapons\Swords\SilverMoonStoneSword.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Items\Weapons\Blood Weapons\" />
+  </ItemGroup>
+
+</Project>
